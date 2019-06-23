@@ -20,7 +20,13 @@ export class HomeComponent implements OnInit {
   }
 
   sort(): void {
-    this.data = this.data.sort((a, b) => (a.name > b.name ? 1 : -1));;
+    this.data = this.data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    /*
+    const sorted: Contact[] = this.data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    this.http.postData(sorted).subscribe(d => {
+      this.data = sorted;
+    });
+    */
   }
 
 }

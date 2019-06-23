@@ -10,4 +10,8 @@ export class HttpService {
     getData(): Observable<any> {
         return this.http.get('http://demo.sibers.com/users')
     }
+
+    postData(data): Observable<any> {
+        return this.http.post('http://demo.sibers.com/users', JSON.stringify(data))
+    }
 }

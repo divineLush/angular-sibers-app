@@ -4,22 +4,21 @@ import { HttpService } from '../home/http-service';
 import { Contact } from '../home/contact';
 
 @Component({
-  selector: 'app-more',
-  templateUrl: './more.component.html',
-  styleUrls: ['./more.component.css']
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.css']
 })
-export class MoreComponent implements OnInit {
+export class EditComponent implements OnInit {
   name: string;
-  avatar: string;
-  keyNames: any[];
   keys: any[];
+  keyNames: any[];
   contact: Contact;
   data: Contact[];
 
   constructor(private activateRoute: ActivatedRoute,
-      public http: HttpService) {
+    public http: HttpService) { 
       this.name = activateRoute.snapshot.params['name'];
-  }
+    }
 
   ngOnInit() {
     this.keys = [];
@@ -34,7 +33,6 @@ export class MoreComponent implements OnInit {
               this.keys.push(this.contact[key])
             }
           }
-          this.avatar = this.contact.avatar;
           return;
         }
       })

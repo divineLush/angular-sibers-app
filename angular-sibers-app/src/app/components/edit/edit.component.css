@@ -7,7 +7,7 @@
 
 .wrapper {
     display: grid;  
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 70%;
     text-align: center;
 }
 
@@ -19,15 +19,9 @@
 a {
     color: #45a29e;
     position: relative;
-    left: 48%;
+    left: 47%;
 }
 
 a:hover {
     color: #c5c6c7;
-}
-
-img {
-    position: relative;
-    top: 10%;
-    left: 20%;
 }

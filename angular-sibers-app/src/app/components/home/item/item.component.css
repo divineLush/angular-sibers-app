@@ -6,3 +6,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+span{
+    position: relative;
+    top: 5px;
+}
+
+a {
+    color: #45a29e;
+}
+
+a:hover {
+    color: #c5c6c7;
+}

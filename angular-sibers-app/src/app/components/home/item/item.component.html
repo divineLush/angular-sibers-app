@@ -1,9 +1,10 @@
-<div class="item" (click)="editItem()">
+<div class="item">
   <span>
     {{ item.name }}
   </span>
-  <div style="display: flex">
+  <div>
     <a [routerLink]="[ '/more', item.name ]">Подробнее</a>
-    <a [routerLink]="[ '/edit' ]">Редактировать</a>
+    <br>
+    <a [routerLink]="[ '/edit', item.name ]">Редактировать</a>
   </div>
 </div>

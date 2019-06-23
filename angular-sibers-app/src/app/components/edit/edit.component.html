@@ -1,12 +1,13 @@
 <div class="cont">
   <div class="wrapper">
     <div class="col">
-      <span *ngFor="let key of keyNames"> {{ key }}: </span> <br />
+      <span *ngFor="let key of keyNames"> {{ key }}: </span> <br>
     </div>
     <div class="col">
-      <span *ngFor="let key of keys"> {{ key }} </span> <br />
+      <span *ngFor="let key of keys">
+        {{ key }}
+      </span> <br>
     </div>
-    <img src="{{ avatar }}" />
   </div>
   <a [routerLink]="['']">Назад</a>
 </div>
