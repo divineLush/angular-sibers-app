@@ -1,6 +1,8 @@
 <div>
-  <div style="background-color: #303e50">
-    <button class="btn btn-dark" (click)="sort()">Сортировать</button>
+  <div style="background-color: #0b0c10">
+    <button class="btn btn-dark" 
+      (click)="sort()"
+      style="position: relative; left: 45%; right: 55%">Сортировать</button>
   </div>
   <div *ngFor="let contact of data">
     <app-item [item]="contact"></app-item>

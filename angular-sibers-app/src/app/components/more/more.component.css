@@ -1,5 +1,6 @@
-.container {
+.cont {
     background-color: #1f2833;
     color: #c5c6c7;
     float: left;
+    width: 100%;
 }
