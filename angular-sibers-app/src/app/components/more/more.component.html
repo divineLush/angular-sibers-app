@@ -1,8 +1,11 @@
 <div class="container">
-  <div *ngFor="let key of keys">
-    <span>
-      {{ key }}
-    </span>  
+  <div>
+    <div *ngFor="let key of keys" style="padding: 10px">
+      <span>
+        {{ key }}
+      </span>
+    </div>
+    <img src="{{ avatar }}" />
   </div>
   <a [routerLink]="['']">Назад</a>
 </div>

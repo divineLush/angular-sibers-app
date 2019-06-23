@@ -10,6 +10,7 @@ import { Contact } from '../home/contact';
 })
 export class MoreComponent implements OnInit {
   name: string;
+  avatar: string;
   keys: any[];
   keyNames: any[];
   contact: Contact;
@@ -28,11 +29,13 @@ export class MoreComponent implements OnInit {
         if (i.name == this.name) {
           this.contact = i;
           for (let key in this.contact) {
-            if (typeof(this.contact[key]) == 'string') {
+            if (typeof(this.contact[key]) == 'string'
+              && key != 'avatar') {
               this.keys.push(this.contact[key])
             }
           }
-          this.keyNames = Object.keys(this.keys);
+          this.avatar = this.contact.avatar;
+          this.keyNames = Object.keys(this.contact);
           return i;
         }
       })
