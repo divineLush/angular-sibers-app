@@ -1,0 +1,8 @@
+.item {
+    background-color: #1f2833;
+    color: #c5c6c7;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
