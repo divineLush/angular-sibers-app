@@ -71,8 +71,6 @@ export class EditComponent implements OnInit {
 
   onSubmit(value: any): void {
     for (let key in value) {
-      console.log(key);
-      console.log(value[key]);
       this.contact[key] = value[key];
     }
     this.getKeys();

@@ -3,6 +3,7 @@
     color: #c5c6c7;
     float: left;
     width: 100%;
+    min-height: 100%;
 }
 
 .wrapper {
@@ -19,7 +20,8 @@
 a {
     color: #45a29e;
     position: relative;
-    left: 48%;
+    left: 47%;
+    right: 53%;
 }
 
 a:hover {

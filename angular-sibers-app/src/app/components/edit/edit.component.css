@@ -3,6 +3,7 @@
     color: #c5c6c7;
     float: left;
     width: 100%;
+    min-height: 100%;
 }
 
 .wrapper {
@@ -14,34 +15,43 @@
 .col {
     padding: 10px; 
     display: grid;
+    position: relative;
+    left: 30%;
 }
+
+
 
 .form {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
+}
+
+input {
+    width: 300px;
+    position: relative;
+    right: 20%;
+    margin: 20px;
 }
 
 label {
     position: relative;
     left: 30%;
-}
-
-input {
-    position: relative;
-    right: 30%;
+    margin: 20px;
 }
 
 button {
     position: relative;
     margin: 20px;
-    left: 40%;
-    right: 60%;
+    left: 42%;
+    right: 58%;
 }
 
 a {
     color: #45a29e;
     position: relative;
-    left: 47%;
+    left: 50%;
+    right: 50%;
 }
 
 a:hover {

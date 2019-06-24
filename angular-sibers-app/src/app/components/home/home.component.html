@@ -1,6 +1,13 @@
 <div>
-  <div style="background-color: #0b0c10">
+  <div class="header">
     <button class="btn btn-dark" (click)="sort()">Сортировать</button>
+    <form [formGroup]="form" class="form-group" 
+      (ngSubmit)="onSubmit(form.value)">
+      <input type="text" placeholder="Введите запрос"
+        class="form-control" 
+        [formControl]="form.controls['field']">
+      <button type="submit" class="btn btn-secondary">Найти</button>
+    </form>
   </div>
   <div *ngFor="let contact of data">
     <app-item [item]="contact"></app-item>
