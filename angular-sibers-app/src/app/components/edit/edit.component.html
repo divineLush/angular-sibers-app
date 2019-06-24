@@ -9,5 +9,15 @@
       </span> <br>
     </div>
   </div>
+  <div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+      <div *ngFor="let key of keyNames" class="form">
+        <label for="inp">{{ key }}: </label>
+        <input type="text" id="inp"
+          [formControl]="form.controls[key]">
+      </div>
+      <button type="submit" class="btn btn-secondary">Сохранить изменения</button>
+    </form>
+  </div>
   <a [routerLink]="['']">Назад</a>
 </div>
